@@ -2,9 +2,9 @@ import './togglebutton.scss'
 
 const ToggleButton = () => {
     return (
-        <div>
-            toggle
-        </div>
+        <button>
+            Button
+        </button>
     )
 }
 

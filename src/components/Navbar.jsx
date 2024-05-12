@@ -1,11 +1,11 @@
 import {motion} from 'framer-motion'
-import Sidebar from './Sidebar'
+import Logo from '../assets/images/mansion-arts-logo.png'
+import Sidebar from './sidebar/Sidebar'
 import './navbar.scss'
 
 const Navbar = () => {
     return (
         <div className='navbar'>
-            {/* {sidebar} */}
             <Sidebar/>
             <div className="wrapper">
                 <motion.span
@@ -13,7 +13,7 @@ const Navbar = () => {
                     animate={{opacity:1, scale:1}}
                     transition={{duration:0.5}}
                 >
-                    Mansion Arts Logo
+                    <img className='logo' src={Logo} alt="Mansion Arts Logo" />
                 </motion.span>
                 <div className="social">
                     <a href="#"><img src="/facebook.png" alt="" /></a>
