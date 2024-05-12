@@ -1,8 +1,19 @@
 import './link.scss'
 
 const Links = () => {
+
+    const items = ['Homepage','About','Services','Portfolio','Contact']
+
     return (
-        <div className='links'>Links</div>
+        <div className='links'>
+            {
+                items.map((item)=>(
+                    <a href={`#${item}`} key={item}>
+                        {item}
+                    </a>
+                ))
+            }
+        </div>
     )
 }
 
