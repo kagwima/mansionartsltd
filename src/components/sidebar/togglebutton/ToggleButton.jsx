@@ -1,8 +1,8 @@
 import './togglebutton.scss'
 
-const ToggleButton = () => {
+const ToggleButton = ({setOpen}) => {
     return (
-        <button>
+        <button onClick={setOpen((prev)=>!prev)}>
             Button
         </button>
     )
