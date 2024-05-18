@@ -17,10 +17,10 @@ const xaxisT = useTransform(scrollYProgress, [0,1], ['0%', '500%']);
 
 
     return (
-        <div ref = {ref} className="parallax" style={{ background: type==='clients'? '#000': '#000'}}>
+        <div ref = {ref} className="parallax" style={{ background: type==='services'? '#000': '#000'}}>
             <motion.h1  style={{y:textT}}>{
-            type === 'clients' ? 'Our Clients' : 
-            type === 'whyus' ? 'Why Us' : 'Portfolio'
+            type === 'services' ? 'Our Services' : 
+            type === 'portfolio' ? 'Portfolio' : 'Contact Us'
             }
             </motion.h1>
             <motion.div className="mountains"></motion.div>

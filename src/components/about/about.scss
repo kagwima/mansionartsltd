@@ -1,0 +1,38 @@
+.about {
+    padding: 7em 3em 3em 3em;
+    .textContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .titleContainer {
+            flex: 2;
+            font-size: 50px;
+            font-family: 'DM Sans';
+        }
+        .descContainer {
+            flex: 2;
+            font-size: 22px;
+            font-family: 'DM Sans';
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .aboutusButton {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 50px;
+                cursor: pointer;
+                p {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                img {
+                    width: 100px;
+                    height: 10%;
+                }
+            }
+        }
+    }
+}

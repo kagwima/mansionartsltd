@@ -30,11 +30,11 @@ const sliderVariants = {
         x: 0,
     },
     animate:{
-        x: '-220%',
+        x: '-1336%',
         transition: {
             repeat:Infinity,
             repeatType: 'mirror',
-            duration: 20,
+            duration: 35,
         },
     },
 }
@@ -44,11 +44,11 @@ const Hero = () => {
         <div className="hero">
             <div className="wrapper">
                 <motion.div className="textContainer" variants={textVariants} initial='initial' animate='animate'>
-                    <motion.h2 variants={textVariants}>Lorem, ipsum.</motion.h2>
-                    <motion.h1 variants={textVariants}>Lorem ipsum dolor sit amet.</motion.h1>
+                    <motion.h2 variants={textVariants}>Mansion, Arts Ltd.</motion.h2>
+                    <motion.h1 variants={textVariants}>Passion . Quality . Timely</motion.h1>
                     <motion.div className="buttons" variants={textVariants}>
-                        <motion.button variants={textVariants}>See the latest works</motion.button>
-                        <motion.button variants={textVariants}>Contact us</motion.button>
+                        <motion.button variants={textVariants} id='#Portfolio'>See the latest works</motion.button>
+                        <motion.button variants={textVariants} id='#Contact'>Contact us</motion.button>
                     </motion.div>
                     <motion.img src={ScrollImg} alt="" variants={textVariants} animate='scrollButton'/>
                 </motion.div>
